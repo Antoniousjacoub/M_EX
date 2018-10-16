@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@drawable/ic_app_background"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.antonio.mtrek.activities.PreLoginActivity">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/ic_group153"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_register_as_user"
+        android:layout_width="match_parent"
+        android:text="@string/register_as_user"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:textSize="@dimen/normal_size"
+       android:background="@drawable/btn_border"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp" />
+    <Button
+        android:id="@+id/btn_register_as_driver"
+        android:layout_width="match_parent"
+        android:text="@string/register_as_driver"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:textSize="@dimen/normal_size"
+       android:background="@drawable/btn_border"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp" />
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:text="@string/login"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:textStyle="bold"
+        android:textSize="@dimen/normal_size"
+        android:padding="10dp"
+       android:background="@drawable/btn_sold_white_backgroud"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp" />
+</LinearLayout>

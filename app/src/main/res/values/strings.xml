@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Mtrek</string>
+    <string name="register_as_user">تسجيل كمستخدم</string>
+    <string name="register_as_driver">تسجيل كسائق</string>
+    <string name="login">تسجيل دخول</string>
+    <string name="new_register">تسجيل جديد</string>
+    <string name="new_register_driver">تسجيل سائق جديد</string>
+    <string name="tv_userName">اسم المستخدم</string>
+    <string name="tv_password">كلمة المرور</string>
+    <string name="tv_repeat_password">تاكيد كلمة المرور</string>
+    <string name="tv_phone">رقم الجوال</string>
+    <string name="tv_terms_and_conditions">أوفق علي الشروط والاحكام</string>
+    <string name="tv_attach_id_photo">صورة الهوية</string>
+    <string name="tv_register">تسجيل</string>
+</resources>

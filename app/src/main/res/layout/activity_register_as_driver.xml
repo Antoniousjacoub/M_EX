@@ -20,15 +20,15 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_centerInParent="true"
-                android:src="@drawable/ic_lock" />
+                android:src="@drawable/ic_avater" />
         </RelativeLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="30dp"
+            android:layout_marginEnd="35dp"
             android:layout_marginLeft="20dp"
-            android:layout_marginStart="30dp"
+            android:layout_marginStart="35dp"
             android:layout_marginTop="20dp"
             android:orientation="horizontal">
 
@@ -36,7 +36,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
-                android:src="@drawable/ic_lock" />
+                android:src="@drawable/ic_user" />
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
@@ -59,9 +59,9 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="30dp"
+            android:layout_marginEnd="35dp"
             android:layout_marginLeft="20dp"
-            android:layout_marginStart="30dp"
+            android:layout_marginStart="35dp"
             android:layout_marginTop="8dp"
             android:orientation="horizontal">
 
@@ -92,9 +92,9 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="30dp"
+            android:layout_marginEnd="35dp"
             android:layout_marginLeft="20dp"
-            android:layout_marginStart="30dp"
+            android:layout_marginStart="35dp"
             android:layout_marginTop="8dp"
             android:orientation="horizontal">
 
@@ -125,9 +125,9 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="30dp"
+            android:layout_marginEnd="35dp"
             android:layout_marginLeft="20dp"
-            android:layout_marginStart="30dp"
+            android:layout_marginStart="35dp"
             android:layout_marginTop="8dp"
             android:orientation="horizontal">
 
@@ -135,7 +135,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:src="@drawable/ic_lock" />
+                android:padding="5dp"
+                android:background="@drawable/black_cirecle"
+                android:src="@drawable/ic_call_2" />
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
@@ -159,12 +161,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginEnd="45dp"
-            android:paddingTop="5dp"
-            android:paddingBottom="5dp"
+            android:paddingTop="10dp"
+            android:paddingStart="5dp"
+            android:paddingBottom="10dp"
             android:layout_marginLeft="20dp"
-            android:layout_marginStart="30dp"
+            android:layout_marginStart="35dp"
             android:background="@drawable/boder_without_radius"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="16dp"
             android:orientation="horizontal"
             android:layout_marginRight="42dp"
             android:paddingLeft="5dp">
@@ -174,7 +177,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:src="@drawable/ic_lock" />
+                android:src="@drawable/ic_camera" />
 
             <TextView
                 android:id="@+id/tv_id_image"
@@ -183,6 +186,7 @@
                 android:layout_gravity="center"
                 android:layout_marginEnd="12dp"
                 android:textStyle="bold"
+
                 android:layout_marginStart="12dp"
                 android:hint="@string/tv_attach_id_photo"
                 android:inputType="number"
@@ -194,10 +198,11 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="30dp"
+            android:layout_marginEnd="35dp"
             android:layout_marginLeft="20dp"
-            android:layout_marginStart="30dp"
+            android:layout_marginStart="35dp"
             android:paddingTop="5dp"
+            android:padding="5dp"
             android:paddingBottom="5dp"
             android:layout_marginTop="8dp"
             android:orientation="horizontal">

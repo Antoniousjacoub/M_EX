@@ -21,20 +21,20 @@
         </activity>
         <activity android:name=".MainActivity" />
         <activity android:name=".activities.PreLoginActivity" />
-        <activity android:name=".activities.RegisterAsUserActivity"
-            android:windowSoftInputMode="stateAlwaysHidden"
-            />
-        <activity android:name=".activities.RegisterAsDriverActivity"
-            android:windowSoftInputMode="stateAlwaysHidden"
+        <activity
+            android:name=".activities.RegisterAsUserActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activities.RegisterAsDriverActivity"
             android:label="@string/app_name"
-            />
-        <activity android:name=".activities.LoginActivity"
-            android:windowSoftInputMode="stateAlwaysHidden"
-            android:theme="@style/AppTheme.NoActionBar"
-            />
-        <activity android:name=".activities.BaseActivity"
-            android:theme="@style/AppTheme.NoActionBar"
-            />
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activities.LoginActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activities.BaseActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activities.ForgotPasswordActivity"></activity>
     </application>
 
 </manifest>

@@ -12,4 +12,10 @@
     <string name="tv_terms_and_conditions">أوفق علي الشروط والاحكام</string>
     <string name="tv_attach_id_photo">صورة الهوية</string>
     <string name="tv_register">تسجيل</string>
+    <string name="tv_login">دخول</string>
+    <string name="tv_forgot_my_password">نسيت كلمة المرور</string>
+    <string name="will_send_password_to_your_phone">سيتم ارسال كلمة المرور الى رقم الهاتف</string>
+    <string name="tv_send">إرسال</string>
+    <string name="enter_sent_password">ادخل كلمة المرور المرسلة</string>
+    <string name="tv_confirm">تأكيد</string>
 </resources>

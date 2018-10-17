@@ -17,4 +17,5 @@
     <color name="grey_700">#616161</color>
     <color name="grey_800">#424242</color>
     <color name="grey_900">#212121</color>
+    <color name="bkgnd_for_txt_forgot_pass">#D3D3D3</color>
 </resources>

@@ -19,7 +19,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
         <activity android:name=".activities.PreLoginActivity" />
         <activity
             android:name=".activities.RegisterAsUserActivity"
@@ -34,7 +33,11 @@
         <activity
             android:name=".activities.BaseActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".activities.ForgotPasswordActivity"></activity>
+        <activity android:name=".activities.ForgotPasswordActivity" />
+        <activity android:name=".activities.ActivationCodeActivity" />
+        <activity android:name=".activities.HomePageActivity" />
+        <activity android:name=".activities.BaseActivityForDrawer" />
+        <activity android:name=".activities.NotificationsActivity"></activity>
     </application>
 
 </manifest>

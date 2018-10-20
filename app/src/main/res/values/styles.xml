@@ -37,9 +37,9 @@
     <!--hamburger icon style-->
     <style name="DrawerHamburgerStyle" parent="@style/Widget.AppCompat.DrawerArrowToggle">
         <item name="spinBars">true</item>
-        <!--<item name="android:src">@drawable/ic_menu_icon</item>-->
-        <!--<item name="android:tint">@color/color_button_normal</item>-->
-        <!--<item name="color">@color/color_button_normal</item>-->
+        <item name="android:src">@drawable/ic_drawer</item>
+        <item name="android:tint">@color/grey_200</item>
+        <item name="color">@color/white</item>
     </style>
 
 

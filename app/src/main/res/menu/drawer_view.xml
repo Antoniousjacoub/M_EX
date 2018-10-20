@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/id0"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_first_fragment"
+            android:icon="@drawable/ic_home_page"
+            android:title="First" />
+    </group>
+    <group
+        android:id="@+id/id1"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_second_fragment"
+            android:icon="@drawable/ic_add"
+            android:title="Second" />
+    </group>
+    <group
+        android:id="@+id/id3"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_third_fragment"
+            android:icon="@drawable/ic_notifications"
+            android:title="Third" />
+    </group>
+
+</menu>

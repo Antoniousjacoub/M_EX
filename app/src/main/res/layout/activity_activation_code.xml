@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:textDirection="rtl"
+    tools:context="com.example.antonio.mtrek.activities.ActivationCodeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tv_phone_with_stars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="***123" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_activation_code_sent_to" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="80dp"
+        android:layout_marginStart="80dp"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <EditText
+            android:id="@+id/edt_first_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:inputType="number"
+            android:lines="1"
+            android:maxLength="1"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/edt_second_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:lines="1"
+            android:maxLength="1"
+            android:inputType="number"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/edt_third_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:lines="1"
+            android:maxLength="1"
+            android:inputType="number"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/edt_fouth_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:gravity="center"
+            android:lines="1"
+            android:maxLength="1"
+            android:singleLine="true" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_confirm_activation_code"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_app_hieght"
+        android:layout_gravity="center"
+        android:layout_marginBottom="50dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="80dp"
+        android:singleLine="true"
+        android:text="@string/tv_confirm"
+        android:textStyle="bold" />
+
+    <TextView
+        android:background="@color/bkgnd_for_txt_forgot_pass"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="@string/will_send_code_without_mins"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

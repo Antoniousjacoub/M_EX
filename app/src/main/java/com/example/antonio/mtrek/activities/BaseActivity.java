@@ -29,7 +29,7 @@ public class BaseActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_base);
-        ButterKnife.bind(this);
+//        ButterKnife.bind(this);
     }
 
     public void initToolbarTitle(String title) {

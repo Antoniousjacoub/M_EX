@@ -18,4 +18,15 @@
     <string name="tv_send">إرسال</string>
     <string name="enter_sent_password">ادخل كلمة المرور المرسلة</string>
     <string name="tv_confirm">تأكيد</string>
+    <string name="activation_code">كود التفعيل</string>
+    <string name="enter_activation_code_sent_to">أدخل الكود المرسل الي جوال رقم</string>
+    <string name="will_send_code_without_mins">سيتم ارسال الرمز خلال 54 ثانية</string>
+    <string name="tv_your_dirction">حدد وجهتك</string>
+    <string name="menu_home_page">الصفحة الرئيسية</string>
+    <string name="menu_add_new_package">اضافة طرد جديد</string>
+    <string name="menu_notification">الاشعارات</string>
+    <string name="menu_history_package">سجل الطرود</string>
+    <string name="menu_profile">الحساب</string>
+    <string name="menu_settings">الاعدادات</string>
+    <string name="menu_logout">تسجيل الخروج</string>
 </resources>

@@ -38,6 +38,8 @@ public class LoginActivity extends AppCompatActivity {
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.btn_login:
+                intent = new Intent(LoginActivity.this,ActivationCodeActivity.class);
+                startActivity(intent);
                 break;
             case R.id.tv_forgot_password:
                 intent = new Intent(LoginActivity.this,ForgotPasswordActivity.class);

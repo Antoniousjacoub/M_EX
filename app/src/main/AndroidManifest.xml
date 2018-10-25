@@ -37,7 +37,8 @@
         <activity android:name=".activities.ActivationCodeActivity" />
         <activity android:name=".activities.HomePageActivity" />
         <activity android:name=".activities.BaseActivityForDrawer" />
-        <activity android:name=".activities.NotificationsActivity"></activity>
+        <activity android:name=".activities.NotificationsActivity" />
+        <activity android:name=".activities.NotificationDetailsActivity"></activity>
     </application>
 
 </manifest>

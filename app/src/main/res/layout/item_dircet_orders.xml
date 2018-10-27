@@ -3,8 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layoutDirection="rtl"
-    android:background="@color/white">
+    android:background="@color/white"
+    android:layoutDirection="ltr">
+
     <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:card_view="http://schemas.android.com/apk/res-auto"
         android:id="@+id/media_card_view"
@@ -56,19 +57,7 @@
                     card_view:layout_constraintStart_toStartOf="parent"
                     card_view:layout_constraintTop_toBottomOf="@+id/tv_notifications_date" />
 
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
 
-
-                    android:layout_marginTop="8dp"
-                    android:gravity="end|center_vertical"
-                    android:text="القاهرةالي السعودية"
-                    card_view:layout_constraintBottom_toTopOf="@+id/linearLayout"
-                    card_view:layout_constraintHorizontal_bias="0.51"
-                    card_view:layout_constraintLeft_toLeftOf="parent"
-                    card_view:layout_constraintRight_toRightOf="parent"
-                    card_view:layout_constraintTop_toBottomOf="@+id/image_rate" />
 
                 <LinearLayout
                     android:id="@+id/linearLayout"
@@ -86,7 +75,7 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:background="@color/black"
+                        android:background="@color/green"
                         android:gravity="center"
                         android:text="اضف سعر"
                         android:textColor="@color/white" />
@@ -130,6 +119,7 @@
                     android:layout_marginEnd="16dp"
                     android:layout_marginRight="16dp"
                     android:text="محمد ابراهيم "
+                    android:textColor="@color/black"
                     card_view:layout_constraintBottom_toBottomOf="@+id/imageView"
                     card_view:layout_constraintEnd_toStartOf="@+id/imageView"
                     card_view:layout_constraintTop_toTopOf="@+id/imageView" />
@@ -142,7 +132,8 @@
                     android:layout_marginEnd="16dp"
                     android:layout_marginRight="16dp"
                     android:layout_marginTop="16dp"
-                    android:text="نقل اوراق من القاهرة الى السعودية"
+                    android:maxLines="4"
+                   android:text="انا مستعد توصيل طردك "
                     card_view:layout_constraintBottom_toBottomOf="parent"
                     card_view:layout_constraintEnd_toEndOf="parent"
                     card_view:layout_constraintHorizontal_bias="0.88"

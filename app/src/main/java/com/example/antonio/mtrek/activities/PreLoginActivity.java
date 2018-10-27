@@ -12,6 +12,8 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
+import static com.example.antonio.mtrek.ulitis.Settings.setUpLanguage;
+
 public class PreLoginActivity extends AppCompatActivity {
 
     @BindView(R.id.btn_register_as_user)
@@ -25,6 +27,7 @@ public class PreLoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setUpLanguage(this);
         setContentView(R.layout.activity_pre_login);
         ButterKnife.bind(this);
     }

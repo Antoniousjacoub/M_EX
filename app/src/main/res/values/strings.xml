@@ -1,32 +1,48 @@
 <resources>
     <string name="app_name">Mtrek</string>
-    <string name="register_as_user">تسجيل كمستخدم</string>
-    <string name="register_as_driver">تسجيل كسائق</string>
-    <string name="login">تسجيل دخول</string>
-    <string name="new_register">تسجيل جديد</string>
-    <string name="new_register_driver">تسجيل سائق جديد</string>
-    <string name="tv_userName">اسم المستخدم</string>
-    <string name="tv_password">كلمة المرور</string>
-    <string name="tv_repeat_password">تاكيد كلمة المرور</string>
-    <string name="tv_phone">رقم الجوال</string>
-    <string name="tv_terms_and_conditions">أوفق علي الشروط والاحكام</string>
-    <string name="tv_attach_id_photo">صورة الهوية</string>
-    <string name="tv_register">تسجيل</string>
-    <string name="tv_login">دخول</string>
-    <string name="tv_forgot_my_password">نسيت كلمة المرور</string>
-    <string name="will_send_password_to_your_phone">سيتم ارسال كلمة المرور الى رقم الهاتف</string>
-    <string name="tv_send">إرسال</string>
-    <string name="enter_sent_password">ادخل كلمة المرور المرسلة</string>
-    <string name="tv_confirm">تأكيد</string>
-    <string name="activation_code">كود التفعيل</string>
-    <string name="enter_activation_code_sent_to">أدخل الكود المرسل الي جوال رقم</string>
-    <string name="will_send_code_without_mins">سيتم ارسال الرمز خلال 54 ثانية</string>
-    <string name="tv_your_dirction">حدد وجهتك</string>
-    <string name="menu_home_page">الصفحة الرئيسية</string>
-    <string name="menu_add_new_package">اضافة طرد جديد</string>
-    <string name="menu_notification">الاشعارات</string>
-    <string name="menu_history_package">سجل الطرود</string>
-    <string name="menu_profile">الحساب</string>
-    <string name="menu_settings">الاعدادات</string>
-    <string name="menu_logout">تسجيل الخروج</string>
+    <string name="register_as_user">Register as user</string>
+    <string name="register_as_driver">Register as Driver</string>
+    <string name="login"> Login</string>
+    <string name="new_register"> New Register</string>
+    <string name="new_register_driver">New Rigister Driver</string>
+    <string name="tv_userName"> UserName </string>
+    <string name="tv_password"> Password </string>
+    <string name="tv_repeat_password"> Confirm Password</string>
+    <string name="tv_phone"> Phone Number</string>
+    <string name="tv_terms_and_conditions">Terms and Conditions</string>
+    <string name="tv_attach_id_photo">ID Photo</string>
+    <string name="tv_register">Register</string>
+    <string name="tv_login">Login</string>
+    <string name="tv_forgot_my_password">Forgot Password</string>
+    <string name="will_send_password_to_your_phone">Will send password in 54 seconds </string>
+    <string name="tv_send">Send</string>
+    <string name="enter_sent_password">Enter sent password </string>
+    <string name="tv_confirm">Confirm</string>
+    <string name="activation_code"> Activation Code</string>
+    <string name="enter_activation_code_sent_to">Enetr sent code Activation</string>
+    <string name="will_send_code_without_mins">Will send code in 85</string>
+    <string name="tv_your_dirction"> Your Direction </string>
+    <string name="menu_home_page"> Home Page </string>
+    <string name="menu_add_new_package">New Package </string>
+    <string name="menu_notification">Notifications</string>
+    <string name="menu_history_package">Package History</string>
+    <string name="menu_profile">Profile</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_logout">Logout</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="static_orders">Static Orders</string>
+    <string name="direct_orders">Direct Orders</string>
+    <string name="order_now">أطلب الان</string>
 </resources>
+
+
+
+
+
+
+
+
+
+

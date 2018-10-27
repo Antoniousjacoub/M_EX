@@ -15,6 +15,8 @@ import com.example.antonio.mtrek.R;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
+import static com.example.antonio.mtrek.ulitis.Settings.setUpLanguage;
+
 public class BaseActivity extends AppCompatActivity {
 
     @BindView(R.id.tv_toolbar_title)
@@ -28,6 +30,8 @@ public class BaseActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        setUpLanguage(this);
         setContentView(R.layout.activity_base);
 //        ButterKnife.bind(this);
     }

@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.antonio.mtrek.R;
@@ -15,15 +16,15 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
- * Created by antonio on 10/20/18.
+ * Created by antonio on 10/27/18.
  */
 
-public class NotificationsAdapter extends BaseAdapter {
+public class DirectOrdersAdapter extends BaseAdapter {
     Context context;
     private LayoutInflater inflater;
     private ViewHolder holder;
 
-    public NotificationsAdapter(Context context) {
+    public DirectOrdersAdapter(Context context) {
 
         this.context = context;
         inflater = LayoutInflater.from(context);
@@ -31,7 +32,7 @@ public class NotificationsAdapter extends BaseAdapter {
 
     @Override
     public int getCount() {
-        return 10;
+        return 50;
     }
 
     @Override
@@ -49,7 +50,7 @@ public class NotificationsAdapter extends BaseAdapter {
     public View getView(final int position, View convertView, ViewGroup parent) {
         View view = convertView;
         if (convertView == null) {
-            view = inflater.inflate(R.layout.item_notifications, parent, false);
+            view = inflater.inflate(R.layout.item_dircet_orders, parent, false);
 
         }
         holder = new ViewHolder(view);
@@ -59,11 +60,14 @@ public class NotificationsAdapter extends BaseAdapter {
         return view;
     }
 
+
     static class ViewHolder {
         @BindView(R.id.tv_notifications_date)
         TextView tvNotificationsDate;
         @BindView(R.id.image_rate)
         ImageView imageRate;
+        @BindView(R.id.linearLayout)
+        LinearLayout linearLayout;
         @BindView(R.id.imageView)
         ImageView imageView;
         @BindView(R.id.textView)

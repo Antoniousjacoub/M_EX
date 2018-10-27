@@ -18,6 +18,7 @@ import android.widget.TextView;
 
 import com.example.antonio.mtrek.R;
 import com.example.antonio.mtrek.adapters.CustomDrawerAdapter;
+import com.example.antonio.mtrek.adapters.RegisterPackagePagerAdapter;
 import com.example.antonio.mtrek.model.DrawerItem;
 
 import java.util.ArrayList;
@@ -25,6 +26,8 @@ import java.util.ArrayList;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+
+import static com.example.antonio.mtrek.ulitis.Settings.setUpLanguage;
 
 public class BaseActivityForDrawer extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
@@ -49,6 +52,7 @@ public class BaseActivityForDrawer extends AppCompatActivity implements AdapterV
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setUpLanguage(this);
         setContentView(R.layout.activity_base_for_drawer);
 //        ButterKnife.bind(this);
 //        ButterKnife.bind(this);
@@ -111,7 +115,7 @@ public class BaseActivityForDrawer extends AppCompatActivity implements AdapterV
     @OnClick(R.id.img_open_drawer)
     public void onViewClicked() {
         if (drawerLayout != null)
-            drawerLayout.openDrawer(Gravity.LEFT);
+            drawerLayout.openDrawer(Gravity.START);
     }
 
     @Override
@@ -127,6 +131,12 @@ public class BaseActivityForDrawer extends AppCompatActivity implements AdapterV
 
             case 3:
                 intent = new Intent(this, NotificationsActivity.class);
+                startActivity(intent);
+
+                break;
+
+            case 4:
+                intent = new Intent(this,RegisterPackageActivity.class);
                 startActivity(intent);
 
                 break;

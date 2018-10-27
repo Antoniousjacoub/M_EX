@@ -206,8 +206,8 @@
                 android:padding="5dp"
                 android:textColor="@color/white"
                 android:text="اتصل"
+                android:drawablePadding="10dp"
                 android:gravity="start|center"
-
                 android:drawableEnd="@drawable/ic_call"
                 android:layout_height="wrap_content"
                 android:drawableRight="@drawable/ic_call" />
@@ -218,6 +218,7 @@
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:text="محادثة"
+                android:drawablePadding="10dp"
                 android:gravity="start|center"
                 android:drawableEnd="@drawable/ic_call_2"
                 android:textColor="@color/white"

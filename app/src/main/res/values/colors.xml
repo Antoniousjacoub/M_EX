@@ -6,6 +6,7 @@
     <color name="black">#000000</color>
     <color name="white">#FFFFFF</color>
 
+    <color name="red">#AF131F</color>
     <color name="color_toolbar">#444444</color>
     <color name="color_bg_tabs">#777777</color>
     <color name="grey_50">#FAFAFA</color>

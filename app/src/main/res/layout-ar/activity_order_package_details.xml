@@ -4,15 +4,16 @@
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:id="@+id/media_card_view"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:layout_marginEnd="5dp"
     android:layout_marginStart="5dp"
+    android:layout_marginTop="10dp"
     android:clipChildren="false"
     android:clipToPadding="false"
     android:divider="@color/white"
     android:dividerHeight="0dp"
     android:elevation="8dp"
-    android:layoutDirection="rtl"
+    android:layoutDirection="ltr"
     card_view:cardBackgroundColor="@color/white"
     card_view:cardElevation="2dp"
     card_view:cardPreventCornerOverlap="false"
@@ -63,7 +64,7 @@
                     android:background="@color/green"
                     android:gravity="center"
                     android:maxLines="1"
-                    android:padding="5dp"
+                    android:padding="8dp"
                     android:text="القاهرة " />
 
 
@@ -101,6 +102,7 @@
                         android:layout_marginEnd="16dp"
                         android:layout_marginRight="16dp"
                         android:text="محمد ابراهيم "
+
                         card_view:layout_constraintBottom_toBottomOf="@+id/imageView"
                         card_view:layout_constraintEnd_toStartOf="@+id/imageView"
                         card_view:layout_constraintTop_toTopOf="@+id/imageView" />
@@ -126,7 +128,8 @@
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="5dp"
                         android:layout_weight="1"
                         android:gravity="start"
                         android:text="نوع الرحلة   :"
@@ -154,6 +157,8 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="start"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="5dp"
                         android:layout_weight="1"
                         android:gravity="start"
                         android:text="رقم الجوال  :"
@@ -173,21 +178,23 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:orientation="horizontal"
-            android:weightSum="5"
+            android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:layout_height="wrap_content">
+            android:orientation="horizontal"
+            android:weightSum="5">
 
             <TextView
                 android:layout_width="0dp"
-                android:layout_weight="4"
                 android:layout_height="wrap_content"
-                android:text= "ل  مب ؤ ؤ ؤي للاؤلا ؤلايء يلايلايلاي يلايلايلايييبلبيليليبلبيلبيلبيلبلءرءؤرءرءؤرؤءرءؤ رءؤرءؤر    ءؤرءرؤءؤرءرةرمن ءةءرلاءلاوءز"
-                 />
+                android:layout_weight="4"
+                android:text="ل  مب ؤ ؤ ؤي للاؤلا ؤلايء يلايلايلاي يلايلايلايييبلبيليليبلبيلبيلبيلبلءرءؤرءرءؤرؤءرءؤ رءؤرءؤر    ءؤرءرؤءؤرءرةرمن ءةءرلاءلاوءز" />
+
             <TextView
                 android:layout_width="0dp"
-                android:layout_weight="1"
                 android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
                 android:text="ملاحظات :"
                 android:textColor="@color/black" />
 
@@ -195,38 +202,64 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:orientation="horizontal"
+            android:layout_height="wrap_content"
 
-            android:layout_marginTop="10dp"
-            android:layout_height="wrap_content">
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
 
             <Button
                 android:layout_width="0dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@color/green"
-                android:padding="5dp"
-                android:textColor="@color/white"
-                android:text="اتصل"
-                android:drawablePadding="10dp"
-                android:gravity="start|center"
                 android:drawableEnd="@drawable/ic_call"
-                android:layout_height="wrap_content"
-                android:drawableRight="@drawable/ic_call" />
-            <Button
-                android:background="@color/blue"
-                android:layout_width="0dp"
-                android:padding="5dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:text="محادثة"
                 android:drawablePadding="10dp"
+                android:drawableRight="@drawable/ic_call"
                 android:gravity="start|center"
-                android:drawableEnd="@drawable/ic_call_2"
-                android:textColor="@color/white"
-                android:drawableRight="@drawable/ic_call_2" />
+                android:padding="8dp"
+                android:text="اتصل"
+                android:textColor="@color/white" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/blue"
+                android:drawableEnd="@drawable/ic_chat"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/ic_chat"
+                android:gravity="start|center"
+                android:padding="8dp"
+                android:text="محادثة"
+                android:textColor="@color/white" />
 
         </LinearLayout>
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/red">
+
+            <TextView
+                android:id="@+id/button_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"
+                android:layout_marginEnd="10dp"
+                android:text="ابلاغ" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+
+                android:paddingBottom="10dip"
+                android:paddingTop="10dip"
+                android:src="@drawable/ic_call_2"
+                android:layout_toEndOf="@id/button_text"
+                android:layout_toRightOf="@id/button_text" />
+        </RelativeLayout>
 
 
     </LinearLayout>

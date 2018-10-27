@@ -30,7 +30,7 @@
             android:id="@+id/tv_toolbar_title"
             android:layout_width="match_parent"
             android:textColor="@color/white"
-            android:textStyle="bold"
+
             android:gravity="center"
             android:textSize="16dp"
             android:layout_height="match_parent"

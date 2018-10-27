@@ -1,6 +1,7 @@
 package com.example.antonio.mtrek.adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.CardView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,6 +12,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.antonio.mtrek.R;
+import com.example.antonio.mtrek.activities.OrderPackageDetailsActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -47,7 +49,7 @@ public class DirectOrdersAdapter extends BaseAdapter {
     }
 
     @Override
-    public View getView(final int position, View convertView, ViewGroup parent) {
+    public View getView(final int position, final View convertView, ViewGroup parent) {
         View view = convertView;
         if (convertView == null) {
             view = inflater.inflate(R.layout.item_dircet_orders, parent, false);
@@ -57,6 +59,14 @@ public class DirectOrdersAdapter extends BaseAdapter {
 
         if (position == 4 || position == 6 || position == 1)
             holder.imageRate.setVisibility(View.VISIBLE);
+
+        holder.directOrderCardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(context, OrderPackageDetailsActivity.class);
+                context.startActivity(intent);
+            }
+        });
         return view;
     }
 
@@ -74,8 +84,8 @@ public class DirectOrdersAdapter extends BaseAdapter {
         TextView textView;
         @BindView(R.id.textView2)
         TextView textView2;
-        @BindView(R.id.media_card_view)
-        CardView mediaCardView;
+        @BindView(R.id.direct_order_card_view)
+        CardView directOrderCardView;
 
         ViewHolder(View view) {
             ButterKnife.bind(this, view);

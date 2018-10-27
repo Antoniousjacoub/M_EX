@@ -2,4 +2,5 @@
 <resources>
     <dimen name="normal_size">18dp</dimen>
     <dimen name="btn_app_hieght">40dp</dimen>
+    <dimen name="width_image_contery_homepage">40dp</dimen>
 </resources>

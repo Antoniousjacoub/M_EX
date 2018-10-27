@@ -4,15 +4,16 @@
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:id="@+id/media_card_view"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:layout_marginEnd="5dp"
     android:layout_marginStart="5dp"
     android:clipChildren="false"
+    android:layout_marginTop="10dp"
     android:clipToPadding="false"
     android:divider="@color/white"
     android:dividerHeight="0dp"
     android:elevation="8dp"
-    android:layoutDirection="rtl"
+    android:layoutDirection="ltr"
     card_view:cardBackgroundColor="@color/white"
     card_view:cardElevation="2dp"
     card_view:cardPreventCornerOverlap="false"
@@ -63,7 +64,7 @@
                     android:background="@color/green"
                     android:gravity="center"
                     android:maxLines="1"
-                    android:padding="5dp"
+                    android:padding="8dp"
                     android:text="القاهرة " />
 
 
@@ -126,11 +127,12 @@
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-
+android:layout_marginEnd="5dp"
                         android:layout_weight="1"
                         android:gravity="start"
                         android:text="نوع الرحلة   :"
-                        android:textColor="@color/black" />
+                        android:textColor="@color/black"
+                        android:layout_marginRight="5dp" />
 
                 </LinearLayout>
 
@@ -156,8 +158,10 @@
                         android:layout_gravity="start"
                         android:layout_weight="1"
                         android:gravity="start"
+                        android:layout_marginEnd="5dp"
                         android:text="رقم الجوال  :"
-                        android:textColor="@color/black" />
+                        android:textColor="@color/black"
+                        android:layout_marginRight="5dp" />
 
                 </LinearLayout>
             </LinearLayout>
@@ -183,13 +187,15 @@
                 android:layout_weight="4"
                 android:layout_height="wrap_content"
                 android:text= "ل  مب ؤ ؤ ؤي للاؤلا ؤلايء يلايلايلاي يلايلايلايييبلبيليليبلبيلبيلبيلبلءرءؤرءرءؤرؤءرءؤ رءؤرءؤر    ءؤرءرؤءؤرءرةرمن ءةءرلاءلاوءز"
-                 />
+                />
             <TextView
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:text="ملاحظات :"
-                android:textColor="@color/black" />
+                android:layout_marginEnd="5dp"
+                android:textColor="@color/black"
+                android:layout_marginRight="5dp" />
 
         </LinearLayout>
 
@@ -197,14 +203,14 @@
             android:layout_width="match_parent"
             android:orientation="horizontal"
 
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20dp"
             android:layout_height="wrap_content">
 
             <Button
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:background="@color/green"
-                android:padding="5dp"
+                android:padding="8dp"
                 android:textColor="@color/white"
                 android:text="اتصل"
                 android:drawablePadding="10dp"
@@ -215,15 +221,15 @@
             <Button
                 android:background="@color/blue"
                 android:layout_width="0dp"
-                android:padding="5dp"
+                android:padding="8dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:text="محادثة"
                 android:drawablePadding="10dp"
                 android:gravity="start|center"
-                android:drawableEnd="@drawable/ic_call_2"
+                android:drawableEnd="@drawable/ic_chat"
                 android:textColor="@color/white"
-                android:drawableRight="@drawable/ic_call_2" />
+                android:drawableRight="@drawable/ic_chat" />
 
         </LinearLayout>
 

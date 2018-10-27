@@ -1,9 +1,255 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
     tools:context="com.example.antonio.mtrek.activities.HomePageActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:src="@drawable/img_map" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/width_image_contery_homepage"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/ic_flag_of_saudi_arabia" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:paddingStart="5dp"
+            android:paddingLeft="5dp"
+            android:layout_weight="2"
+            android:singleLine="true"
+            android:enabled="false"
+            android:text="السعودية"
+            android:textColor="@color/grey_700" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/black_cirecle"
+            android:padding="8dp"
+            android:src="@drawable/ic_location" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:paddingStart="5dp"
+            android:paddingLeft="5dp"
+            android:layout_weight="2"
+            android:enabled="false"
+            android:singleLine="true"
+            android:text="السعودية"
+            android:textColor="@color/grey_700" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/black_cirecle"
+
+            android:padding="8dp"
+            android:src="@drawable/ic_location" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:paddingStart="5dp"
+            android:paddingLeft="5dp"
+            android:layout_weight="2"
+            android:enabled="false"
+            android:text="السعودية"
+            android:singleLine="true"
+            android:textColor="@color/grey_700" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_weight=".5"
+        android:src="@drawable/ic_exchange" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/width_image_contery_homepage"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_flag_of_egypt"
+            android:layout_marginLeft="10dp" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:paddingStart="5dp"
+            android:paddingLeft="5dp"
+            android:layout_weight="2"
+            android:enabled="false"
+            android:text="مصر"
+            android:singleLine="true"
+            android:textColor="@color/grey_700" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/black_cirecle"
+            android:padding="8dp"
+            android:src="@drawable/ic_location" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:enabled="false"
+            android:text="السعودية"
+            android:singleLine="true"
+            android:textColor="@color/grey_700"
+            android:paddingStart="5dp"
+            android:paddingLeft="5dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/black_cirecle"
+            android:padding="8dp"
+            android:src="@drawable/ic_location" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:paddingStart="5dp"
+            android:paddingLeft="5dp"
+            android:layout_weight="2"
+            android:enabled="false"
+            android:text="السعودية"
+            android:singleLine="true"
+            android:textColor="@color/grey_700" />
+
+    </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_date"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingStart="30dp"
+
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="20dp"
+            android:hint="التاريخ"
+            android:paddingLeft="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp" />
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:buttonTint="@color/black"
+            android:text="الكل" />
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:buttonTint="@color/black"
+            android:text="جوي" />
+        <android.support.v7.widget.AppCompatRadioButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:buttonTint="@color/black"
+            android:text="بري" />
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:buttonTint="@color/black"
+            android:text="بحري" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/black_cirecle"
+            android:padding="8dp"
+            android:src="@drawable/ic_pin" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:maxLines="3"
+            android:hint="اكتب هنا تفاصيل اضافية عند طردك"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_order_now"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_app_hieght"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
+        android:singleLine="true"
+        android:text="@string/order_now"
+        android:textStyle="bold" />
+</LinearLayout>
+</ScrollView>

@@ -17,16 +17,16 @@
         android:orientation="horizontal"
         android:padding="20dp">
 
-        <TextView
-            android:id="@+id/tv_phone_with_stars"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="***123" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/enter_activation_code_sent_to" />
+        <TextView
+            android:id="@+id/tv_phone_with_stars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="***123" />
 
     </LinearLayout>
 
@@ -93,7 +93,7 @@
         android:layout_marginBottom="50dp"
         android:layout_marginEnd="60dp"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="60dp"
         android:singleLine="true"
         android:text="@string/tv_confirm"
         android:textStyle="bold" />

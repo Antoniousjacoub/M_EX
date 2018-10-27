@@ -20,27 +20,53 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activities.PreLoginActivity" />
+        <activity android:name=".activities.PreLoginActivity"
+            android:screenOrientation="portrait"
+
+            />
         <activity
             android:name=".activities.RegisterAsUserActivity"
+            android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
             android:name=".activities.RegisterAsDriverActivity"
             android:label="@string/app_name"
-            android:windowSoftInputMode="stateAlwaysHidden" />
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+           />
         <activity
             android:name=".activities.LoginActivity"
+            android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
             android:name=".activities.BaseActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".activities.ForgotPasswordActivity" />
-        <activity android:name=".activities.ActivationCodeActivity" />
-        <activity android:name=".activities.HomePageActivity" />
-        <activity android:name=".activities.BaseActivityForDrawer" />
-        <activity android:name=".activities.NotificationsActivity" />
-        <activity android:name=".activities.NotificationDetailsActivity" />
-        <activity android:name=".activities.RegisterPackageActivity"></activity>
+        <activity android:name=".activities.ForgotPasswordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".activities.ActivationCodeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible"/>
+        <activity android:name=".activities.HomePageActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".activities.BaseActivityForDrawer"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".activities.NotificationsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".activities.NotificationDetailsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".activities.RegisterPackageActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".activities.OrderPackageDetailsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
     </application>
 
 </manifest>

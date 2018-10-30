@@ -37,15 +37,13 @@
                 android:src="@drawable/ic_flag_of_saudi_arabia" />
 
             <EditText
-                android:id="@+id/first_country"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:paddingStart="5dp"
                 android:paddingLeft="5dp"
                 android:layout_weight="2"
                 android:singleLine="true"
-              android:focusable="false"
-                android:clickable="true"
+                android:enabled="false"
                 android:text="السعودية"
                 android:textColor="@color/grey_700" />
 
@@ -63,8 +61,7 @@
                 android:paddingStart="5dp"
                 android:paddingLeft="5dp"
                 android:layout_weight="2"
-              android:focusable="false"
-                android:clickable="true"
+                android:enabled="false"
                 android:singleLine="true"
                 android:text="الرياض"
                 android:textColor="@color/grey_700" />
@@ -74,7 +71,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:background="@drawable/black_cirecle"
-
+android:visibility="gone"
                 android:padding="8dp"
                 android:src="@drawable/ic_location" />
 
@@ -84,8 +81,9 @@
                 android:paddingStart="5dp"
                 android:paddingLeft="5dp"
                 android:layout_weight="2"
-                android:focusable="false"
-                android:clickable="true"                android:text="الكل"
+                android:enabled="false"
+                android:visibility="gone"
+                android:text="السعودية"
                 android:singleLine="true"
                 android:textColor="@color/grey_700" />
 
@@ -116,14 +114,12 @@
                 android:layout_marginLeft="10dp" />
 
             <EditText
-                android:id="@+id/second_country"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:paddingStart="5dp"
                 android:paddingLeft="5dp"
                 android:layout_weight="2"
-               android:focusable="false"
-                android:clickable="true"
+                android:enabled="false"
                 android:text="مصر"
                 android:singleLine="true"
                 android:textColor="@color/grey_700" />
@@ -140,8 +136,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="2"
-                android:focusable="false"
-                android:clickable="true"
+                android:enabled="false"
                 android:text="القاهرة"
                 android:singleLine="true"
                 android:textColor="@color/grey_700"
@@ -154,6 +149,7 @@
                 android:layout_gravity="center"
                 android:background="@drawable/black_cirecle"
                 android:padding="8dp"
+                android:visibility="gone"
                 android:src="@drawable/ic_location" />
 
             <EditText
@@ -162,8 +158,9 @@
                 android:paddingStart="5dp"
                 android:paddingLeft="5dp"
                 android:layout_weight="2"
-                android:focusable="false"
-                android:clickable="true"                android:text="الدقي"
+                android:enabled="false"
+                android:visibility="gone"
+                android:text="السعودية"
                 android:singleLine="true"
                 android:textColor="@color/grey_700" />
 
@@ -175,6 +172,7 @@
             style="@style/Base.Widget.AppCompat.Spinner.Underlined"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:paddingStart="30dp"
@@ -191,18 +189,11 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_marginEnd="40dp"
-            android:layout_gravity="center"
-            android:gravity="center"
             android:layout_marginStart="40dp"
             android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
             android:orientation="horizontal">
-
-            <android.support.v7.widget.AppCompatRadioButton
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                app:buttonTint="@color/black"
-                android:text="@string/all" />
 
             <android.support.v7.widget.AppCompatRadioButton
                 android:layout_width="0dp"
@@ -239,13 +230,36 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:background="@drawable/black_cirecle"
+                android:padding="5dp"
+                android:src="@drawable/ic_money" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:maxLines="3"
+                android:hint="@string/write_priece"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/black_cirecle"
                 android:padding="8dp"
                 android:src="@drawable/ic_pin" />
 
             <EditText
                 android:layout_width="match_parent"
                 android:maxLines="3"
-                android:hint="@string/more_details_about_your_package"
+                android:hint="@string/write_details_your_trip"
                 android:layout_height="wrap_content" />
         </LinearLayout>
 
@@ -259,7 +273,7 @@
             android:layout_marginStart="60dp"
             android:layout_marginTop="20dp"
             android:singleLine="true"
-            android:text="@string/order_now"
+            android:text="@string/add_trip"
             android:textStyle="bold" />
     </LinearLayout>
 </ScrollView>

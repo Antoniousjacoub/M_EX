@@ -33,4 +33,15 @@
     <string name="static_orders">الطلبات الثابتة</string>
     <string name="direct_orders">الطلبات المباشرة</string>
     <string name="order_now">أطلب الان</string>
+    <string name="add_trip">إضافة رحلة</string>
+    <string name="air_trasportation">جوي</string>
+    <string name="land_trasportation">بري</string>
+    <string name="sea_trasportation">بحري</string>
+    <string name="more_details_about_your_package">اكتب هنا تفاصيل اضافية عند طردك</string>
+    <string name="choose_date">أختر التاريخ</string>
+    <string name="write_priece">أكتب السعر</string>
+    <string name="write_details_your_trip">أكتب هنا تفاصيل رحلتك</string>
+    <string name="all">الكل</string>
+    <string name="done">تم</string>
+    <string name="rate">التقيم</string>
 </resources>

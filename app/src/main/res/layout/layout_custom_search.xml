@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:focusable="true"
+    android:clickable="true"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:id="@+id/rltv_search"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/grey_300"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:visibility="visible">
+
+        <SearchView
+            android:id="@+id/custom_search_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_grey_stroke_button"
+            android:iconifiedByDefault="false"
+
+            android:queryBackground="@android:color/transparent" />
+
+
+        <ImageView
+            android:id="@+id/btn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@color/white"
+            />
+    </RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/lstv_custom_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rltv_search">
+
+    </ListView>
+
+    <ProgressBar
+        android:id="@+id/my_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+</RelativeLayout>

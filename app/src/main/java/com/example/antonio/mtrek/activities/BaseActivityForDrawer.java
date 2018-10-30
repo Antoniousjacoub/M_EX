@@ -18,7 +18,6 @@ import android.widget.TextView;
 
 import com.example.antonio.mtrek.R;
 import com.example.antonio.mtrek.adapters.CustomDrawerAdapter;
-import com.example.antonio.mtrek.adapters.RegisterPackagePagerAdapter;
 import com.example.antonio.mtrek.model.DrawerItem;
 
 import java.util.ArrayList;
@@ -47,6 +46,8 @@ public class BaseActivityForDrawer extends AppCompatActivity implements AdapterV
     ImageView drawerBg;
     @BindView(R.id.menuList)
     ListView menuList;
+    @BindView(R.id.img_notifications)
+    ImageView imgNotifications;
     private Intent intent;
 
     @Override
@@ -54,6 +55,7 @@ public class BaseActivityForDrawer extends AppCompatActivity implements AdapterV
         super.onCreate(savedInstanceState);
         setUpLanguage(this);
         setContentView(R.layout.activity_base_for_drawer);
+//        ButterKnife.bind(this);
 //        ButterKnife.bind(this);
 //        ButterKnife.bind(this);
     }
@@ -129,6 +131,12 @@ public class BaseActivityForDrawer extends AppCompatActivity implements AdapterV
                 startActivity(intent);
                 break;
 
+                case 2:
+
+                intent = new Intent(this, AddNewPackageActivity.class);
+                startActivity(intent);
+                break;
+
             case 3:
                 intent = new Intent(this, NotificationsActivity.class);
                 startActivity(intent);
@@ -136,18 +144,25 @@ public class BaseActivityForDrawer extends AppCompatActivity implements AdapterV
                 break;
 
             case 4:
-                intent = new Intent(this,RegisterPackageActivity.class);
+                intent = new Intent(this, RegisterPackageActivity.class);
                 startActivity(intent);
 
                 break;
 
             case 7:
                 intent = new Intent(this, SplashActivity.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK| Intent.FLAG_ACTIVITY_NEW_TASK);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intent);
 
         }
 
+
+    }
+
+    @OnClick(R.id.img_notifications)
+    public void onClicked() {
+        Intent intent=new Intent(this,NotificationsActivity.class);
+        startActivity(intent);
 
     }
 }

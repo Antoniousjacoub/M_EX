@@ -2,6 +2,7 @@
 
 <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
     android:id="@+id/media_card_view"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -46,25 +47,25 @@
                     android:textColor="@color/black" />
 
                 <ImageView
-                    android:id="@+id/image_details_rate"
+                    android:id="@+id/rate_bar_notifications_details"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="start"
+
                     android:layout_marginLeft="10dp"
                     android:layout_marginStart="10dp"
                     android:src="@drawable/rate_bar"
-                    android:visibility="visible" />
+                    />
 
                 <Button
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="@dimen/btn_app_hieght"
                     android:layout_marginEnd="60dp"
                     android:layout_marginRight="60dp"
                     android:layout_marginTop="50dp"
                     android:background="@color/green"
                     android:gravity="center"
                     android:maxLines="1"
-                    android:padding="8dp"
                     android:text="القاهرة " />
 
 
@@ -216,14 +217,14 @@ android:layout_marginEnd="5dp"
                 android:drawablePadding="10dp"
                 android:gravity="start|center"
                 android:drawableEnd="@drawable/ic_call"
-                android:layout_height="wrap_content"
+                android:layout_height="@dimen/btn_app_hieght"
                 android:drawableRight="@drawable/ic_call" />
             <Button
                 android:background="@color/blue"
                 android:layout_width="0dp"
                 android:padding="8dp"
                 android:layout_weight="1"
-                android:layout_height="wrap_content"
+                android:layout_height="@dimen/btn_app_hieght"
                 android:text="محادثة"
                 android:drawablePadding="10dp"
                 android:gravity="start|center"

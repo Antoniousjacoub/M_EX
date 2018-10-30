@@ -24,38 +24,38 @@
         android:layout_marginStart="50dp"
         android:layout_marginEnd="50dp"
         android:textStyle="bold"
-        android:padding="10dp"
-        android:textSize="@dimen/normal_size"
+
+
        android:background="@drawable/btn_border"
         android:textColor="@color/white"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/btn_app_hieght"
         android:layout_marginLeft="50dp" />
     <Button
         android:id="@+id/btn_register_as_driver"
         android:layout_width="match_parent"
         android:text="@string/register_as_driver"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:layout_marginStart="50dp"
         android:layout_marginEnd="50dp"
         android:textStyle="bold"
-        android:padding="10dp"
-        android:textSize="@dimen/normal_size"
+
+
        android:background="@drawable/btn_border"
         android:textColor="@color/white"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/btn_app_hieght"
         android:layout_marginLeft="50dp" />
     <Button
         android:id="@+id/btn_login"
         android:layout_width="match_parent"
         android:text="@string/login"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:layout_marginStart="50dp"
         android:layout_marginEnd="50dp"
         android:textStyle="bold"
-        android:textSize="@dimen/normal_size"
-        android:padding="10dp"
+
+
        android:background="@drawable/btn_sold_white_backgroud"
         android:textColor="@color/black"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/btn_app_hieght"
         android:layout_marginLeft="50dp" />
 </LinearLayout>

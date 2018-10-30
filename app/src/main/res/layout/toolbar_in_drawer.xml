@@ -19,26 +19,43 @@
 
         <ImageView
             android:id="@+id/img_open_drawer"
-            android:src="@drawable/ic_drawer"
-            android:tint="@color/white"
-            android:layout_gravity="center|center_vertical"
             android:layout_width="wrap_content"
-            android:layout_marginStart="10dp"
             android:layout_height="match_parent"
-            android:layout_marginLeft="10dp" />
+            android:layout_gravity="center|center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/ic_drawer"
+            android:tint="@color/white" />
+
+        <ImageView
+            android:id="@+id/img_notifications"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center|center_vertical"
+            android:layout_marginLeft="10dp"
+
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/img_open_drawer"
+            android:layout_toLeftOf="@+id/img_open_drawer"
+            android:layout_toRightOf="@+id/img_open_drawer"
+            android:padding="6dp"
+            android:src="@drawable/ic_notifications"
+            android:tint="@color/white"
+            android:visibility="gone" />
+
         <TextView
             android:id="@+id/tv_toolbar_title"
             android:layout_width="match_parent"
-            android:textColor="@color/white"
-
-            android:gravity="center"
-            android:textSize="16dp"
             android:layout_height="match_parent"
+
             android:layout_centerHorizontal="true"
             android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="16dp"
             android:visibility="visible" />
     </RelativeLayout>
-
 
 
 </android.support.v7.widget.Toolbar>
